@@ -1,0 +1,14 @@
+.mainPage {
+  width: 90%;
+  height: 90%;
+  border-color: black;
+  border-style: solid;
+}
+  
+.feedBlock {
+  margin: 1vh;
+  width: 90%;
+  height: 90%;
+  border-color: black;
+  border-style: solid;
+}

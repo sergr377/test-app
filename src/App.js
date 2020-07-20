@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import MainPageContainer from './components/MainPage/MainPageContainer';
+import EditPageContainer from './components/EditPage/EditPageContainer';
+import LoginPageContainer from './components/LoginPage/LoginPageContainer';
+import FeedbackPageContainer from './components/FeedbackPage/FeedbackPageContainer';
+import NavbarContainer from './components/Navbar/NavbarContainer';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <NavbarContainer />
+        <Switch>
+          <Route exact path='/mainPage'
+            render={() => <MainPageContainer />} />
+          <Route path='/editPage'
+            render={() => <EditPageContainer />} />
+          <Route path='/loginPage'
+            render={() => <LoginPageContainer />} />
+          <Route path='/feedbackPage'
+            render={() => <FeedbackPageContainer />} />
+        </Switch>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App; 
