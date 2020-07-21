@@ -6,25 +6,30 @@ function Navbar(props) {
 
     return (
         <div className={s.navbar}>
-            <div className={s.navbutton}>
-                <Link to={'/mainPage'} >
-                    Main
+            <div className={s.navbuttonR}>
+                <div >
+                    <Link className={s.navLink} to={'/mainPage'} >
+                        Мои новости
                 </Link>
+                </div>
+                <div >
+                    {props.isAuth
+                        ? <Link className={s.navLink} to={'/editPage'} >Редактировать</Link>
+                        : <a className={s.navLinkOff}>Редактировать</a>
+                    }
+                </div>
             </div>
-            <div className={s.navbutton}>
-                <Link to={'/editPage'} >
-                    EditPage
+            <div className={s.navbuttonl}>
+                <div >
+                    <Link className={s.navLink} to={'/feedbackPage'} >
+                        Написать
+                    </Link>
+                </div>
+                <div >
+                    <Link className={s.navLink} to={'/loginPage'} >
+                        Войти
                 </Link>
-            </div>
-            <div className={s.navbutton}>
-                <Link to={'/loginPage'} >
-                    LoginPage
-                </Link>
-            </div>
-            <div className={s.navbutton}>
-                <Link to={'/feedbackPage'} >
-                    FeedbackPage
-                </Link>
+                </div>
             </div>
         </div>
     );

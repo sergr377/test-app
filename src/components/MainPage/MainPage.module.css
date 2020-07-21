@@ -1,14 +1,45 @@
 .mainPage {
-  width: 90%;
-  height: 90%;
-  border-color: black;
-  border-style: solid;
+  display: flex;
+  width: 100%;
 }
   
 .feedBlock {
-  margin: 1vh;
-  width: 90%;
-  height: 90%;
-  border-color: black;
-  border-style: solid;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom-color: #dfe6e9;
+  border-bottom-width: 0.5px;
+  border-bottom-style: solid;
+}
+
+.feedCol {
+  display: grid;
+  border-width: 0.5px;
+  margin-top: 0px;
+  margin-right: 1vh;
+  margin-left: 1vh;
+  color: #89959b;
+}
+
+.picCol {
+  justify-self: center;
+  align-self: center;
+}
+
+.href {
+  text-decoration: none;
+  color: #2d3436
+}
+
+.feedTitle {
+  margin-top: 0px;
+  color: #2d3436;
+}
+
+.timeCol {
+  align-self: flex-end;
+  color: #89959b;
 }

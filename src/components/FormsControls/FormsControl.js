@@ -2,34 +2,34 @@ import React, { Fragment } from 'react';
 import styles from './FormsControl.module.css'
 
 
-// const FormConstructor = (props) => {
+const FormConstructor = (props) => {
 
-//     const hasError = props.touched && props.error;
-//     return (
-//         <div className={styles.formControl + " " + (hasError ? styles.error : "")} >
-//             <div>
-//                 {props.element}
-//             </div>
-//             {hasError && <span>{props.error}</span>}
-//         </div>
-//     )
-// }
+    const hasError = props.touched && props.error;
+    return (
+        <div className={styles.formControl + " " + (hasError ? styles.error : "")} >
+            <div>
+                {props.element}
+            </div>
+            {hasError && <span>{props.error}</span>}
+        </div>
+    )
+}
 
-// export const Textarea = ({input, meta, ...props}) => {
-//     const el = React.createElement('Textarea', {...input, ...props})
-//     return (
-//         <FormConstructor element = {el} {...meta} />
-//     )
-// }
+export const Textarea = ({input, meta, ...props}) => {
+    const el = React.createElement('Textarea', {...input, ...props})
+    return (
+        <FormConstructor element = {el} {...meta} />
+    )
+}
 
-// export const Input = ({input, meta, ...props}) => {
-//     const el = React.createElement('input', {...input, ...props})
-//     return (
-//         <FormConstructor element = {el} {...meta} />
-//     )
-// }
+export const Input = ({input, meta, ...props}) => {
+    const el = React.createElement('input', {...input, ...props})
+    return (
+        <FormConstructor element = {el} {...meta} />
+    )
+}
 
-const myInput = props => {
+export const myInput = props => {
     const { input, type, placeholder, meta } = props;
     return (
         <Fragment>
@@ -42,4 +42,3 @@ const myInput = props => {
         </Fragment>
     );
 };
-export default myInput

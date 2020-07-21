@@ -1,13 +1,37 @@
 .navbar {
   display: flex;
-  background-color: rgb(102, 141, 226);
- 
+  background-color: #dfe6e9;
+  align-items: center;
 }
 
-.navbutton {
-  border-color: black;
-  border-style: solid;
+.navbuttonR {
+  width: 50%;
   margin: 1vh;
+  display: flex;
+}
+
+.navbuttonl {
+  width: 50%;
+  display: flex;
+  margin: 1vh;
+  justify-content: flex-end;
+
+}
+
+.navLink {
+  font-size: 2.5vh;
+  margin: 1vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: #2d3436;
+}
+
+.navLinkOff {
+  font-size: 2.5vh;
+  margin: 1vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: #a8aeb1;
 }
 
 .header img {
