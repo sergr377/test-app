@@ -1,8 +1,9 @@
 
 
 ## Важно
-Запрос к источнику новостей не будет работать по причине:
-'http://localhost:3000' has been blocked by CORS policy'
+ * Письма теперь отправляются</li>
+ * Запрос к источнику новостей не будет работать по причине: 'http://localhost:3000' has been blocked by CORS policy'
+
 ### Для нормального получения данных с новостного сайта и работы приложения необходимо дополнительно установить расширение для браузера:
 https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc
 
