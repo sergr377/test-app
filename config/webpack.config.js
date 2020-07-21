@@ -193,7 +193,6 @@ module.exports = function(webpackEnv) {
       // module chunks which are built will work in web workers as well.
       globalObject: 'this',
     },
-    externals: ['axios'],
     optimization: {
       minimize: isEnvProduction,
       minimizer: [
