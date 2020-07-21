@@ -1,3 +1,13 @@
+
+
+### Важно
+Запрос к источнику новостей не будет работать по причине:
+'http://localhost:3000' has been blocked by CORS policy'
+## Для нормального получения данных с новостного сайта необходимо дополнительно установить расширение для браузера:
+https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
