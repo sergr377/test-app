@@ -11,10 +11,10 @@ export default function MainPage(props) {
                 {props.feeds.map(item =>
                     <div className={s.feedBlock}>
                         <div className={s.picCol}>
-                           <img src={newsPic}/>
+                            <img src={newsPic} />
                         </div>
                         <div className={s.feedCol}>
-                            <h4 className={s.feedTitle}>{item.title}</h4>
+                            <h4 className={s.feedTitle}>{props.feeds.indexOf(item) + 1 + ' '}{item.title}</h4>
                             <div className={s.timeCol}>
                                 {item.pubDate}
                             </div>
